@@ -7,8 +7,13 @@
 //
 
 #import "BHRHttpTool.h"
-#import <AFNetworking.h>
-#import <AFNetworkActivityIndicatorManager.h>
+#if __has_include(<AFNetworking/AFNetworking.h>)
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
+#else
+#import "AFNetworking.h"
+#import "AFNetworkActivityIndicatorManager.h"
+
 #import "SecurityUtil.h"
 #import "NSData+AES.h"
 static NSMutableArray *tasks;
