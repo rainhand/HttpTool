@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HttpToolTest"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "about http"
 
   s.description  = "a fast integration"
